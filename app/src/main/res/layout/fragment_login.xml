@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.LogInFragment">
 
     <TextView
         android:id="@+id/textView_welcome"
@@ -19,7 +20,7 @@
         app:layout_constraintVertical_bias="0.1"/>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInput_email"
+        android:id="@+id/textInput_email"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.9"
@@ -45,7 +46,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInput_password"
+        android:id="@+id/textInput_password"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.9"
@@ -69,16 +70,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/textView_forget_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forget_password_rus"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/TextInput_password"
-        app:layout_constraintTop_toBottomOf="@id/TextInput_password"
+        app:layout_constraintEnd_toEndOf="@id/textInput_password"
+        app:layout_constraintTop_toBottomOf="@id/textInput_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintHorizontal_bias="1"/>
+        app:layout_constraintHorizontal_bias="1" />
 
     <Button
         android:id="@+id/button_login"
