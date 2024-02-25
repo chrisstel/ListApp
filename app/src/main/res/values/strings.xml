@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListApp</string>
+    <string name="welcome_rus">Добро пожаловать!</string>
+    <string name="email_rus">Почта</string>
+    <string name="forget_password_rus">Забыли пароль?</string>
+    <string name="password_rus">Пароль</string>
+    <string name="login_rus">Войти</string>
+</resources>
