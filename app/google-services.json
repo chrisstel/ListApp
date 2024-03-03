@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884656555642",
+    "project_id": "listapp-c7d87",
+    "storage_bucket": "listapp-c7d87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884656555642:android:683e00141950964cbaddc3",
+        "android_client_info": {
+          "package_name": "com.example.listapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyzEaPi6r_lTjJuc3mvAqyWqtK3F39P3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

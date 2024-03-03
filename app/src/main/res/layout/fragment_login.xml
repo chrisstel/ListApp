@@ -7,7 +7,7 @@
     tools:context=".ui.fragments.LogInFragment">
 
     <TextView
-        android:id="@+id/textView_welcome"
+        android:id="@+id/text_view_welcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/welcome_rus"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.1"/>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInput_email"
+        android:id="@+id/text_input_email"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.9"
@@ -46,7 +46,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInput_password"
+        android:id="@+id/text_input_password"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.9"
@@ -65,19 +65,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/password_rus"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView_forget_password"
+        android:id="@+id/text_view_forget_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forget_password_rus"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/textInput_password"
-        app:layout_constraintTop_toBottomOf="@id/textInput_password"
+        app:layout_constraintEnd_toEndOf="@id/text_input_password"
+        app:layout_constraintTop_toBottomOf="@id/text_input_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="1" />
@@ -90,6 +91,20 @@
         app:layout_constraintWidth_max="320dp"
         app:layout_constraintHeight_percent="0.08"
         android:text="@string/login_rus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.86"/>
+
+    <Button
+        android:id="@+id/button_create_account"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintWidth_max="320dp"
+        app:layout_constraintHeight_percent="0.08"
+        android:text="@string/create_account_rus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
